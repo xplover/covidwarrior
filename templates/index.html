@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Corona Warrior</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='game.css') }}">
+    <script src="{{ url_for('static', filename='game.js') }}" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Game Covid Warrior</h1>
+    </header>
+    <main>
+        <h2>Instructions</h2>
+        <ol>
+            <li>The game is simple. All you have to do is to save yourself from Covid viruses, and collect vaccines.
+            </li>
+            <li>You can go through the wall, but virus and vaccines can not.</li>
+        </ol>
+        <h2>
+            <a href="{{ url_for('game') }}">Play</a>
+        </h2>
+    </main>
+
+
+</body>
+
+</html>
